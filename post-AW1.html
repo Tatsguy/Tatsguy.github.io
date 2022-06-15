@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Remix Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/css/main.css">
+</head>
+<body>
+    <!--Navbar-->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="./index.html">
+                <h2 class="logo">TATS</h2>
+            </a>
+            <div class="list list-right">
+                <button class="btn place-item-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <div id="myLinks" class="hide-sm">
+                    <a href="./index.html" class="header-link">Inicio</a>
+                    <a href="./blog.html" class="header-link">Blog</a>
+                </div>
+
+                <a href="javascript:void(0);" class="icon appear-sm" onclick="hamburger_menu()">
+                    <button class="btn place-item-center">
+                        <i class="ri-menu-fold-fill"></i>
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!--Blog Post-->
+    <div class="blog-post section-header-offset">
+        <div class="blog-post-container container">
+            <div class="blog-post-data">
+                <h3 class="title blog-post-title">Comienza el viaje con JavaScript</h3>
+                <div class="article-data">
+                    <span>30 de Mayo 2022</span>
+                    <span class="article-data-spacer"></span>
+                    <span>5 min de lectura</span>
+                </div>
+                <img src="./Assets/img/blog-img/js.jpg" alt="">
+            </div>
+            <div class="container justify-all">
+                <p>
+                    Esta semana comenzó la aventura con JavaScript, es aqui donde las cosas comienzan a tomar un enfoque
+                    completamente diferente, estamos a un paso más cerca de lograr nuestro objetivo como programadores
+                    web puesto que ya casi logramos conseguir todas las herramientas indispensables. 
+                </p>
+                <p>
+                    El programa que hicimos fue sumamente sencillo pero aun asi se sintio bien puesto que un pequeño
+                    paso a la vez se convierte en un mayor progreso más adelante
+                </p>
+                <blockquote class="quote">
+                    <p>
+                        Esperaba este momento con muchas ancias ya que en la preparatoria nunca logre comprender bien el tema,
+                        espero y esta se vuelva la excepción.
+                    </p>
+                </blockquote>
+                <p>
+                    A continuación un ejemplo del primer programa en JS que realizamos:
+                </p>
+                <img src="Assets/img/blog-img/js_ex.png" alt="">
+                <div class="author d-grid">
+                    <div class="author-image-box">
+                        <img src="./Assets/img/profile.png" alt="" class="article-image">
+                    </div>
+                    <div class="author-about">
+                        <h3 class="author-name">Javier Emiliano Vázquez González</h3>
+                        <p>
+                            Ingeniero en Desarrollo y Gestión de Software en formación, un amante acérrimo de la tecnologia
+                            y el HIP-HOP. Cada día busco superarme a mi mismo; mi mayor limitante es el tiempo es por eso
+                            que trato de aprovecharlo lo mejor que pueda.
+                        </p>
+                        <ul class="list social-media">
+                            <li class="list-item">
+                                <a href="#" class="list-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+        
+                                <a href="#" class="list-link">
+                                    <i class="ri-twitter-line"></i>
+                                </a>
+        
+                                <a href="#" class="list-link">
+                                    <i class="ri-facebook-circle-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

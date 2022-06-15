@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazquez | Portfolio</title>
+    <!--Remix Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Main CSS-->
+    <link rel="stylesheet" href="./Assets/css/main.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="./index.html">
+                <h2 class="logo">TATS</h2>
+            </a>
+            <div class="list list-right">
+                <button class="btn place-item-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <div id="myLinks" class="hide-sm">
+                    <a href="#" class="header-link active">Inicio</a>
+                    <a href="./blog.html" class="header-link">Blog</a>
+                </div>
+
+                <a href="javascript:void(0);" class="icon appear-sm" onclick="hamburger_menu()">
+                    <button class="btn place-item-center">
+                        <i class="ri-menu-fold-fill"></i>
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <section class="offset-header presentation">
+        <div class="half-container">
+            <div class="name-box">
+                <div class="centered">
+                    <img class="foto-perfil" src="./Assets/img/profile.png" alt="">
+                    <h1>Soy Javier Emiliano, Bienvenido a mi portafolio.</h1>
+                </div>
+            </div>
+            <div class="details-box">
+                <div class="mision-vision centered">
+                    <div class="normal-details">
+                        <h2>Misión</h2>
+                        <p class="hide-sm">Por el momento mi misión es vivir esta nueva etapa de mi vida y aprovecharla
+                            al máximo, el tiempo es el recurso más valioso que tenemos y no podemos malgastarlo.</p>
+                    </div>
+                    <div class="normal-details">
+                        <h2>Visión</h2>
+                        <p class="hide-sm">En el futuro como ingeniero me veo disfrutando de mi carrera y de la vida, se que
+                            de sueños no se
+                            vive pero creo que son los que nos mantienen con vida y con un constante sentimiento de
+                            superación.
+                        </p>
+                    </div>
+                    <details>
+                        <summary>
+                            <h2>Misión</h2>
+                        </summary>
+                        <div class="details-content">
+                            <p>Por el momento mi misión es vivir esta nueva etapa de mi vida y aprovecharla
+                                al máximo, el tiempo es el recurso más valioso que tenemos y no podemos malgastarlo.
+                            </p>
+                        </div>
+                    </details>
+
+                    <details>
+                        <summary>
+                            <h2>Visión</h2>
+                        </summary>
+                        <div class="details-content">
+                            <p>En el futuro como ingeniero me veo disfrutando de mi carrera y de la vida, se que
+                                de sueños no se
+                                vive pero creo que son los que nos mantienen con vida y con un constante sentimiento de
+                                superación.
+                            </p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parciales">
+        <div class="section-title">
+            <button onclick="">
+                <h1>Parciales de trabajo</h1>
+            </button>
+        </div>
+        <div class="parciales-box">
+            <div>
+                <a class="parcial-item" target="_blank"
+                    href="https://drive.google.com/drive/folders/1KMQ5NIpS8q7MQuNr8S97vOY69iOMh8Z3?usp=sharing">
+                    <h2>Parcial #1</h2>
+                    <div class="image-box">
+                        <img class="parcial-image" src="./Assets/img/plan.jpg" alt="">
+                    </div>
+                    <p>Planeación de proyectos de TI</p>
+                    <ul>
+                        <li>Definición de proyecto</li>
+                        <li>Planificación del proyecto</li>
+                    </ul>
+                </a>
+            </div>
+            <div>
+                <a class="parcial-item" target="_blank"
+                    href="https://drive.google.com/drive/folders/1f9D_LmTLhIoaRMTr71AwffcGYCnKDACH?usp=sharing">
+                    <h2>Parcial #2</h2>
+                    <div class="image-box">
+                        <img class="parcial-image" src="./Assets/img/develop.jpg" alt="">
+                    </div>
+                    <p>Desarrollo del Proyecto de T.I.</p>
+                    <ul>
+                        <li>Desarrollo del proyecto TI</li>
+                        <li>Cierre del proyecto</li>
+                    </ul>
+                </a>
+            </div>
+            <div>
+                <a class="parcial-item" target="_blank"
+                    href="https://drive.google.com/drive/folders/12YgrBkoJ1I2l5X6v9dbX4HyxRrwgIpZk?usp=sharing">
+                    <h2>Parcial #3</h2>
+                    <div class="image-box">
+                        <img class="parcial-image" src="./Assets/img/conference.jpg" alt="">
+                    </div>
+                    <p>Cierre del proyecto</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="./Assets/js/main.js"></script>
+</body>
+
+</html>

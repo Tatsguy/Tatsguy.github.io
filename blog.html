@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vazquez | Blog</title>
+    <!--Remix Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--Blog Styles-->
+    <link rel="stylesheet" href="./Assets/css/blog.css">
+</head>
+
+<body>
+    <!--Navbar-->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="./index.html">
+                <h2 class="logo">TATS</h2>
+            </a>
+            <div class="list list-right">
+                <button class="btn place-item-center" id="theme-toggle-btn">
+                    <i class="ri-sun-line sun-icon"></i>
+                    <i class="ri-moon-line moon-icon"></i>
+                </button>
+
+                <div id="myLinks" class="hide-sm">
+                    <a href="./index.html" class="header-link">Inicio</a>
+                    <a href="#" class="header-link active">Blog</a>
+                </div>
+
+                <a href="javascript:void(0);" class="icon appear-sm" onclick="hamburger_menu()">
+                    <button class="btn place-item-center">
+                        <i class="ri-menu-fold-fill"></i>
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!--Featured Articles-->
+    <section class="featured-articles section-header-offset">
+        <div class="featured-articles-container container d-grid">
+            <div class="featured-content d-grid">
+                <div class="headline-banner">
+                    <h3 class="headline fancy-border">
+                        <span class="place-items-center">Articulo más nuevo</span>
+                    </h3>
+                    <span class="headline-description">Comienza la aventura con JavaScript</span>
+                </div>
+
+                <a href="./post-AW1.html" class="article featured-article featured-article-1">
+                    <img src="./Assets/img/blog-img/js.jpg" alt="" class="article-image">
+                    <span class="article-category">Aplicaciones Web</span>
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>30 de Mayo 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>5 min de lectura</span>
+                        </div>
+                        <h3 class="title article-title">Comienza el viaje con JavaScript</h3>
+                    </div>
+                </a>
+
+                <a href="./post-BD1.html" class="article featured-article featured-article-2">
+                    <img src="./Assets/img/blog-img/db-image.jpg" alt="" class="article-image">
+                    <span class="article-category">Bases de Datos</span>
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>27 de Mayo 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>3 min de lectura</span>
+                        </div>
+                        <h3 class="title article-title">Consultas Multitabla (Avanzadas)</h3>
+                    </div>
+                </a>
+
+                <a href="./post-IN1.html" class="article featured-article featured-article-3">
+                    <img src="./Assets/img/blog-img/project.jpg" alt="" class="article-image">
+                    <span class="article-category">Integradora I</span>
+                    <div class="article-data-container">
+                        <div class="article-data">
+                            <span>24 de Mayo 2022</span>
+                            <span class="article-data-spacer"></span>
+                            <span>7 min de lectura</span>
+                        </div>
+                        <h3 class="title article-title">Investigaciones de la Unidad 1</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <script src="Assets/js/main.js"></script>
+</body>
+
+</html>
