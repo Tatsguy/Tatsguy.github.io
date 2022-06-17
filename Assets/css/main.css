@@ -76,11 +76,6 @@ body.light-theme{
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
 }
-
-section{
-    margin: 3.5rem;
-}
-
 /*Reusable Classes*/
 .container{
     max-width: 160rem;
@@ -102,47 +97,6 @@ section{
     display: grid;
 }
 
-.section-title{
-    margin-bottom: 1.5rem;
-}
-/*Pantalla de inicio*/
-.pnt-inicio{
-    height: 100vh;
-    background-color: rgba(0, 0, 255, 0.282);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    position: relative;
-}
-.pnt-inicio > .works{
-    margin-top: 15px;
-}
-.pnt-inicio > p{
-    font-size: var(--font-size-md);
-    letter-spacing: -2px;
-}
-span.name{
-    color: rgb(233, 88, 136);
-    font-weight: 700;
-}
-button.works{
-    padding: 0.8rem;
-    border: 2px solid white;
-}
-.barra{
-    position: absolute;
-    bottom: 0;
-    background-color: black;
-    width: 100%;
-}
-.nav-list{
-    display: flex;
-    margin-left: 3rem;
-}
-.nav-list>li{
-    padding: 0 15px;
-}
 /*Header*/
 .appear-sm{
     display: none;
@@ -233,36 +187,32 @@ button.works{
 }
 
 /*Presentation*/
+.presentation{
+    background-color: white;
+    color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .normal-details{
     margin: 20px 0;
-}
-
-.offset-header{
-    margin-top: 7.5rem;
 }
 
 .half-container{
     display: flex;
     flex-direction: row;
-    background-color: var(--light-color-alt);
-    border-radius: 2em;
 }
 
 .name-box{
-    width: 30%;
     display: flex;
+    width: 100%;
+    text-align: center;
 }
 
 .details-box{
-    width: 70%;
     display: flex;
-}
-
-.centered{
-    width: 70%;    
-    margin: auto;
-    padding: 30px 0;
-    text-align: center;
+    width: 100%;
 }
 
 .centered.mision-vision{
@@ -286,7 +236,6 @@ button.works{
 
 details{
     display: none;
-    margin: 20px 0;
 }
 
 details>summary{
@@ -311,6 +260,16 @@ details > summary::-webkit-details-marker{
 }
 
 /*Parciales Section*/
+.parciales{
+    background-color: #aa9e90;
+    color: black;
+    height: 100vh;
+}
+
+.section-title{
+    padding-top: 39px;
+}
+
 .parciales-box {
     display: flex;
     gap: var(--gap);
@@ -362,7 +321,7 @@ details > summary::-webkit-details-marker{
 
 /*Scrollbar Styles*/
 ::-webkit-scrollbar{
-    width: 1rem;
+    width: 0;
 }
 
 ::-webkit-scrollbar-track{

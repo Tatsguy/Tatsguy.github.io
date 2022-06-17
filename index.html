@@ -10,23 +10,27 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!--Main CSS-->
     <link rel="stylesheet" href="./Assets/css/main.css">
+    <link rel="stylesheet" href="./Assets/css/new.css">
 </head>
 
 <body>
-    <div class="pnt-inicio">
+    <div class="pnt-inicio" id="start">
         <p>Hola, Soy <span class="name">Emiliano Vázquez</span></p>
         <p>Y soy un aspirante a ingeniero de Software</p>
-        <button class="works">Ver mis trabajos</button>
-        <div class="barra">
-            <ul class="nav-list">
-                <li>HOME</li>
-                <li>ABOUT</li>
-                <li>BLOG</li>
-            </ul>
+        <button class="works">Ver mis trabajos &gt;</button>
+        <div class="barra" id="l-container">
+            <div class="barra" id="navbar">
+                <ul class="nav-list" id="theList">
+                    <li><a href="#start"><button class="nav-btn">INICIO</button></a></li>
+                    <li><a href="#face"><button class="nav-btn">SOBRE MI</button></a></li>
+                    <li><a href="#parciales"><button class="nav-btn">PARCIALES</button></a></li>
+                    <li><button class="nav-btn">BLOG</button></li>
+                </ul>
+            </div>
         </div>
     </div>
     <!--Presentacion-->
-    <section class="presentation">
+    <section class="presentation" id="face">
         <div class="half-container">
             <div class="name-box">
                 <div class="centered">
@@ -43,7 +47,8 @@
                     </div>
                     <div class="normal-details">
                         <h2>Visión</h2>
-                        <p class="hide-sm">En el futuro como ingeniero me veo disfrutando de mi carrera y de la vida, se que
+                        <p class="hide-sm">En el futuro como ingeniero me veo disfrutando de mi carrera y de la vida, se
+                            que
                             de sueños no se
                             vive pero creo que son los que nos mantienen con vida y con un constante sentimiento de
                             superación.
@@ -77,11 +82,9 @@
         </div>
     </section>
 
-    <section class="parciales">
+    <section class="parciales" id="parciales">
         <div class="section-title">
-            <button onclick="">
-                <h1>Parciales de trabajo</h1>
-            </button>
+            <h1>Parciales de trabajo</h1>
         </div>
         <div class="parciales-box">
             <div>
@@ -124,7 +127,19 @@
             </div>
         </div>
     </section>
-    <script src="./Assets/js/main.js"></script>
+    <script>
+        var list = document.getElementById("navbar");
+        var navbar = document.getElementById("l-container");
+        window.onscroll = function () {
+            if (window.pageYOffset >= navbar.offsetTop - 39) {
+                list.classList.add("sticky");
+                console.log("Clase Añadida");
+            } else {
+                list.classList.remove("sticky");
+                console.log("Clase Removida");
+            }
+        }
+    </script>
 </body>
 
 </html>
