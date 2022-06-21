@@ -3,17 +3,17 @@ html{
 }
 
 body{
-    background: url(../img/anus.jpg);
+    background: url(../img/bg-start.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center;
+    background-position: top;
 }
 
 /*Pantalla de inicio*/
 .pnt-inicio{
     height: 100vh;
-    background-color: rgba(0, 0, 255, 0.282);
+    background-color: rgba(29, 53, 87, 0.282);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,7 +28,7 @@ body{
     letter-spacing: -2px;
 }
 span.name{
-    color: rgb(233, 88, 136);
+    color: #E21143;
     font-weight: 700;
 }
 button.works{
@@ -43,7 +43,7 @@ button.works:hover{
 .barra{
     position: absolute;
     bottom: 0;
-    background-color: black;
+    background-color: #09111c;
     width: 100%;
 }
 .nav-list{
@@ -59,11 +59,7 @@ button.works:hover{
 }
 
 .nav-btn:hover{
-    background-color: rgb(233, 88, 136);
-}
-
-section{
-    background: black;
+    background-color: #E21143;
 }
 
 .sticky{
@@ -71,4 +67,32 @@ section{
     top: 0;
     left: 0;
     height: fit-content;
+    z-index: 100;
+}
+
+.footer{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #09111c;
+}
+
+#freelance{
+    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inicio{
+    padding: 0 3rem;
+}
+
+.reddy{
+    color: #E21143;
+}
+
+.myName{
+    max-width: 600px;
 }
