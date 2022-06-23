@@ -216,8 +216,8 @@ body.light-theme{
     width: 100%;
 }
 
-.centered.mision-vision{
-    text-align: justify;
+.mision-vision{
+    width: 100%;
 }
 
 .mision-vision p{

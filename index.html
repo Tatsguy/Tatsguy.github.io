@@ -14,17 +14,17 @@
 </head>
 
 <body>
-    <div class="pnt-inicio" id="start">
+    <div class="pnt-inicio hide-mobile" id="start">
         <p>Hola, Soy <span class="name">Emiliano Vázquez</span></p>
         <p>Y soy un aspirante a ingeniero de Software</p>
-        <button class="works">Ver mis trabajos &gt;</button>
+        <button class="works"><a href="https://github.com/Tatsguy" target="_blank">Ver mis trabajos &gt;</a></button>
         <div class="barra" id="l-container">
             <div class="barra" id="navbar">
                 <ul class="nav-list" id="theList">
                     <li><a href="#start"><button class="nav-btn">INICIO</button></a></li>
                     <li><a href="#face"><button class="nav-btn">SOBRE MI</button></a></li>
                     <li><a href="#parciales"><button class="nav-btn">PARCIALES</button></a></li>
-                    <li><button class="nav-btn">BLOG</button></li>
+                    <li><a href="blog.html"><button class="nav-btn">BLOG</button></a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="details-box">
-                <div class="mision-vision centered">
+                <div class="mision-vision">
                     <div class="normal-details">
                         <h2 class="reddy">Misión</h2>
                         <p class="hide-sm">Por el momento mi misión es vivir esta nueva etapa de mi vida y aprovecharla
@@ -95,7 +95,7 @@
                         <img class="parcial-image" src="./Assets/img/plan.jpg" alt="">
                     </div>
                     <p>Planeación de proyectos de TI</p>
-                    <ul>
+                    <ul class="hide-mobile">
                         <li>Definición de proyecto</li>
                         <li>Planificación del proyecto</li>
                     </ul>
@@ -109,7 +109,7 @@
                         <img class="parcial-image" src="./Assets/img/develop.jpg" alt="">
                     </div>
                     <p>Desarrollo del Proyecto de T.I.</p>
-                    <ul>
+                    <ul class="hide-mobile">
                         <li>Desarrollo del proyecto TI</li>
                         <li>Cierre del proyecto</li>
                     </ul>
@@ -131,7 +131,7 @@
     <section class="footer inicio">
         <h1 id="freelance">De vez en cuando tomo trabajos independientes.</h1>
         <p>¿Necesitas ayuda con un proyecto emocionante?
-            Enviame un mensaje, y <a href="#">hablemos</a>.</p>
+            Enviame un mensaje, y <a href="#" id="chat">hablemos</a>.</p>
     </section>
     <script>
         var list = document.getElementById("navbar");

@@ -2,23 +2,19 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
-    background: url(../img/bg-start.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: top;
-}
-
 /*Pantalla de inicio*/
 .pnt-inicio{
     height: 100vh;
-    background-color: rgba(29, 53, 87, 0.282);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     position: relative;
+    background: url(../img/bg-start.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
 }
 .pnt-inicio > .works{
     margin-top: 15px;
@@ -90,9 +86,55 @@ button.works:hover{
 }
 
 .reddy{
-    color: #E21143;
+    color: #e21143;
 }
 
 .myName{
     max-width: 600px;
+}
+
+#chat{
+    border-bottom: 3px #E21143 solid;
+}
+
+
+@media only screen and (max-width: 425px){
+    .hide-mobile{
+        display: none;
+    }
+
+    .inicio{
+        padding: 0;
+    }
+
+    section{
+        margin: 0 2rem;
+    }
+
+    .presentation{
+        height: auto;
+    }
+    
+    .name-box{
+        margin: 1.2rem 0;
+    }
+
+    details{
+        margin: 1.2rem 0;
+    }
+
+    .section-title{
+        padding: 1.2rem 0;
+    }
+
+    .parciales{
+        height: auto;
+    }
+
+    .footer{
+        margin: 0;
+        margin-top: 1.2rem;
+        padding: 2rem 0;
+        text-align: center;
+    }
 }
