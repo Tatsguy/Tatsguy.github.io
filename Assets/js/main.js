@@ -17,25 +17,6 @@ const scrollHeader = () =>{
 
 window.addEventListener('scroll',scrollHeader);
 
-//Switch theme/add to local storage
-const bodyElement = document.body;
-const themeToggle = selectElement('#theme-toggle-btn');
-const currentTheme = localStorage.getItem('currentTheme');
-
-if(currentTheme){
-    bodyElement.classList.add('light-theme');
-}
-
-themeToggle.addEventListener('click', ()=>{
-    bodyElement.classList.toggle('light-theme');
-
-    if(bodyElement.classList.contains('light-theme')){
-        localStorage.setItem('currentTheme','themeActive');
-    }else{
-        localStorage.removeItem('currentTheme','themeActive');
-    }
-});
-
 function hamburger_menu() {
     const x = document.getElementById("myLinks");
     if (x.style.display === "block") {

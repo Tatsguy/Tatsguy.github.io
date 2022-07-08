@@ -4,9 +4,15 @@
 /*Custom Properties*/
 :root{
     --light-color: #FEFAE0;
-    --light-color-alt: #DDA15E;
-    --primary-background-color:#BC6C25;
-    --secondary-background-color: #283618;
+    --light-color-alt: white;
+    --primary-background-color:#E21143;
+    --secondary-background-color: #bc0f37;
+    --third-background-color: #606C38;
+    --hover-light-color: var(--light-color);
+    --hover-dark-color: var(--primary-background-color);
+    --gradient-color: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    --transparent-light-color: rgba(254,250,224,.05);
+    --transparent-dark-color: rgb(226, 17, 67, 0.75);
     --font-family: 'Poppins',sans-serif;
     --font-size-xsm: 1.2rem;
     --font-size-sm: 1.6rem;
@@ -66,16 +72,6 @@ i{
     font-size: var(--font-size-md);
 }
 
-/*Theme color change*/
-body.light-theme{
-    --light-color: #FEFAE0;
-    --light-color-alt: #aa9e90;
-    --primary-background-color:#231407;
-    --secondary-background-color: #232c18;
-    --third-background-color: #353c1f;
-    --hover-light-color: var(--light-color);
-    --hover-dark-color: var(--primary-background-color);
-}
 /*Reusable Classes*/
 .container{
     max-width: 160rem;
@@ -430,7 +426,7 @@ details > summary::-webkit-details-marker{
     gap: 1rem;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .author-name{

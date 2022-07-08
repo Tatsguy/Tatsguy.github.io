@@ -4,15 +4,15 @@
 /*Custom Properties*/
 :root{
     --light-color: #FEFAE0;
-    --light-color-alt: #DDA15E;
-    --primary-background-color:#BC6C25;
-    --secondary-background-color: #283618;
+    --light-color-alt: white;
+    --primary-background-color:#E21143;
+    --secondary-background-color: #bc0f37;
     --third-background-color: #606C38;
     --hover-light-color: var(--light-color);
     --hover-dark-color: var(--primary-background-color);
     --gradient-color: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
     --transparent-light-color: rgba(254,250,224,.05);
-    --transparent-dark-color: rgba(221,161,94,.75);
+    --transparent-dark-color: rgb(226, 17, 67, 0.75);
     --font-family: 'Poppins',sans-serif;
     --font-size-xsm: 1.2rem;
     --font-size-sm: 1.6rem;
@@ -70,17 +70,6 @@ input,button{
 
 i{
     font-size: var(--font-size-md);
-}
-
-/*Theme color change*/
-body.light-theme{
-    --light-color: #FEFAE0;
-    --light-color-alt: #aa9e90;
-    --primary-background-color:#231407;
-    --secondary-background-color: #232c18;
-    --third-background-color: #353c1f;
-    --hover-light-color: var(--light-color);
-    --hover-dark-color: var(--primary-background-color);
 }
 
 section{
@@ -224,8 +213,8 @@ section{
 .featured-articles-container,
 .featured-content{
     gap: var(--gap);
-    background: rgb(188,108,37);
-    background: linear-gradient(180deg, rgba(188,108,37,1) 0%, rgba(202,117,42,1) 100%);
+    background-color: #09111c;
+    padding-bottom: 20px;
 }
 
 .headline-banner{
@@ -325,6 +314,25 @@ section{
     margin-bottom: 1rem;
 }
 
+.older-post-image{
+    width: 100%;
+    height: 30%;
+    background-position: center;
+}
+
+.old-post{
+    position: relative;
+}
+
+.old-post-banner{
+    background-color: var(--transparent-dark-color);
+    transition: background-color .5s;
+}
+
+.old-post:hover .old-post-banner{
+    background-color: var(--hover-dark-color);
+}
+
 .article-data-spacer{
     width: .5rem;
     height: .5rem;
@@ -342,8 +350,8 @@ section{
 
 @media screen and (min-width: 768px) {
     .featured-content{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 5rem repeat(4,1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 5rem repeat(3,1fr);
     }
 
     .headline-banner{
@@ -353,7 +361,6 @@ section{
 
     .featured-article{
         grid-column: 3/-1;
-        grid-row: 2/4;
     }
 
     .featured-article-1{
@@ -362,7 +369,6 @@ section{
 
     .featured-article-3{
         grid-column: 1/-1;
-        grid-row: 4/6;
     }
 
     .older-posts .article{
