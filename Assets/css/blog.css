@@ -103,7 +103,7 @@ section{
 
 /*Header*/
 .header{
-    background-color: var(--secondary-background-color);
+    background-color: #09111c;
     position: fixed;
     top: 0;
     left: 0;
@@ -213,7 +213,7 @@ section{
 .featured-articles-container,
 .featured-content{
     gap: var(--gap);
-    background-color: #09111c;
+    background-color: rgba(9, 17, 28);
     padding-bottom: 20px;
 }
 
